@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monad vs Ethereum</title>
     <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.esm.min.mjs';
         mermaid.initialize({ startOnLoad: true });
     </script>
 </head>
 <body>
     <h1>Comparison between Monad and Ethereum</h1>
     <div class="mermaid">
-        graph TD;
-          Monad["Monad"];
-          Ethereum["Ethereum"];
+        graph TD
+          Monad["Monad"]
+          Ethereum["Ethereum"]
           
-          Monad -- "Functional Programming" --> Ethereum;
-          Monad -- "Pure Functions" --> Ethereum;
-          Monad -- "Chaining Operations" --> Ethereum;
-          Ethereum --> "Blockchain Technology";
-          Ethereum --> "Smart Contracts";
-          Ethereum --> "Decentralized Applications";
-          Monad --> "No Central Authority";
-          Ethereum --> "Public Ledger";
+          Monad -->|Functional Programming| Ethereum
+          Monad -->|Pure Functions| Ethereum
+          Monad -->|Chaining Operations| Ethereum
+          Ethereum -->|Blockchain Technology| Monad
+          Ethereum -->|Smart Contracts| Monad
+          Ethereum -->|Decentralized Applications| Monad
+          Monad -->|No Central Authority| Ethereum
+          Ethereum -->|Public Ledger| Monad
     </div>
 </body>
 </html>
